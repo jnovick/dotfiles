@@ -67,6 +67,11 @@ curl -fsSL https://get.pulumi.com | sh
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt install -y python3.8 python3-venv python3-pip
+pip3 install pycrypto
+
+# Golang
+sudo apt install golang
+go version
 
 # Ruby
 sudo apt-get install -y ruby-full

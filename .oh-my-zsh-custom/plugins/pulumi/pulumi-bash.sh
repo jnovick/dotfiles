@@ -115,15 +115,11 @@ set_pulumi_context(){
       export AZURE_STORAGE_ACCOUNT="olympiacstate"
       CONTEXT="olymp"
       ;;
+    iris|core|visionai)
+      export AZURE_STORAGE_ACCOUNT="${CONTEXT}iacstate"
+      ;;
     visionai-hub)
       export AZURE_STORAGE_ACCOUNT="visionaiiacstate"
-      ;;
-    core-global|core-boi)
-      rm ~/.pulumi/workspaces/core-*-workspace.json
-      export AZURE_STORAGE_ACCOUNT="coreiacstate"
-      ;;
-    *) # iris|core|visionai|inventory|playlist|exp and anything else new
-      export AZURE_STORAGE_ACCOUNT="${CONTEXT}iacstate"
       ;;
   esac
 
@@ -135,11 +131,3 @@ set_pulumi_context(){
     pulumi stack select $STACK
   fi
 }
-
-_set_pulumi_context_bash_completion(){
-
-}
-
-if [[ $(cat /proc/$$/cmdline) == "bash" ]]; then
-  complete -F _set_pulumi_context_bash_completion set_pulumi_context
-fi

@@ -13,7 +13,7 @@ while true; do
 done
 
 TMP_CHANGELOG="$(mktemp)"
-BASE_URL=$(git remote get-url origin | sed "s;git@ssh.dev.azure.com:v3/hrblock/TFE;https://dev.azure.com/hrblock/TFE/_git;" | sed "s;https://hrblock@dev;https://dev;")
+BASE_URL=$(git remote get-url origin | sed "s;git@ssh.dev.azure.com:v3/tricentis/cloud;https://dev.azure.com/tricentis/cloud/_git;" | sed "s;https://tricentis@dev;https://dev;")
 FIRST_COMMIT=$(git rev-list --max-parents=0 HEAD | tail -n 1)
 
 LATEST_TAG=$(git tag -l --sort=version:refname | tail -1)
@@ -89,7 +89,7 @@ if [[ $DRY_RUN == "TRUE" ]]; then
   git tag -d $NEXT_TAG > /dev/null 2> /dev/null
 fi
 
-sed -i 's/Merged PR \([0-9]*\)[^0-9].*/!\1/g' $TMP_CHANGELOG
+#sed -i 's/Merged PR \([0-9]*\)[^0-9].*/!\1/g' $TMP_CHANGELOG
 sed -i 's/- \(feat\|fix\|refactor\|docs\|ci\|test\|style\)[^:]*!:\(.*\)$/- \2 **(Contains breaking change)**/g' $TMP_CHANGELOG
 sed -i 's/- \(feat\|fix\|refactor\|docs\|ci\|test\|style\):/-/g' $TMP_CHANGELOG
 echo >> $TMP_CHANGELOG

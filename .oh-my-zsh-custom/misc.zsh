@@ -7,6 +7,10 @@ if [[ "$PWD" = "/mnt/c/Windows/System32" ]]; then
 fi
 
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.dotnet/tools
+
+cp -r ~/.ssh /mnt/c/Users/josno/.ssh
 
 # This is an altered version of git_main_branch
 git_remote_branch() {
@@ -26,7 +30,7 @@ git_remote_branch() {
 pr() {
   local URL="https://tricentis.visualstudio.com/"
   URL="$URL$(pwd | sed "s|$HOME\/git\/\([^/]*\).*|\1|g")/_git/"
-  URL="$URL$(pwd | sed "s|$HOME/git/[^/]*/\([^/]*\)/.*|\1|g")/"
+  URL="$URL$(pwd | sed "s|$HOME/git/[^/]*/\([^/]*\).*|\1|g")/"
   URL="${URL}pullrequestcreate?sourceRef=$(git rev-parse --abbrev-ref HEAD)&"
   URL="${URL}targetRef=$(git_remote_branch)"
 

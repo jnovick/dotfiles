@@ -232,7 +232,7 @@ prompt_status() {
 
 prompt_kubecontext() {
     (( $+commands[kubectl] )) || return
-    prompt_segment cyan black `printf "\u2388\u00A0$(kubectl config current-context)"`
+    prompt_segment cyan black `printf "\u2388\u00A0$(kubectl config current-context):$(kubectl config view --minify --output 'jsonpath={..namespace}')"`
 }
 
 prompt_pulumi() {

@@ -1,0 +1,222 @@
+---------- dev ----------
+kubectl create rolebinding traviata-admin-edit -n core --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n core --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding core-admin-edit -n core --group=9945de7b-849b-4244-9790-5c1b772806f9 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/core-admin-edit created
+kubectl create rolebinding core-reader-view -n core --group=4d44cf4c-1b71-4821-8ea7-931c5084a243 --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/core-reader-view created
+kubectl create rolebinding traviata-admin-edit -n inv --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n inv --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding inv-admin-edit -n inv --group=b99544b6-e63e-4d5b-9924-04175a98d7b7 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/inv-admin-edit created
+kubectl create rolebinding inv-reader-view -n inv --group=b21bdf23-4cdd-48fc-8115-ffafe8d6fbfd --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/inv-reader-view created
+kubectl create rolebinding traviata-admin-edit -n tds --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n tds --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding tds-admin-edit -n tds --group=12ba3505-e7e5-45e7-8ade-497bfaa3fb19 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/tds-admin-edit created
+kubectl create rolebinding tds-reader-view -n tds --group=2b0ff165-6cd3-423b-a25e-62ca11268676 --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/tds-reader-view created
+kubectl create rolebinding traviata-admin-edit -n play --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n play --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding play-admin-edit -n play --group=0ac5a9a3-9e4a-487a-9a3a-5bd56e421c31 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/play-admin-edit created
+kubectl create rolebinding play-reader-view -n play --group=33cc41e3-239a-4321-89be-21191c002bb1 --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/play-reader-view created
+kubectl create rolebinding traviata-admin-edit -n e2g --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding traviata-reader-view -n e2g --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding e2g-admin-edit -n e2g --group=e723d162-c49e-4a9e-886d-bb8fbc697824 --clusterrole=edit --context plat-neu-dev-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding e2g-reader-view -n e2g --group=fbf956ee-a73e-4902-b921-9f8d1a16e5d3 --clusterrole=view --context plat-neu-dev-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding traviata-admin-edit -n mbt --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n mbt --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding mbt-admin-edit -n mbt --group=14b9da74-dcad-43ab-9210-ccf2e655f579 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/mbt-admin-edit created
+kubectl create rolebinding mbt-reader-view -n mbt --group=8d27c8be-16a9-4f1a-9975-2de34cfa59ab --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/mbt-reader-view created
+kubectl create rolebinding traviata-admin-edit -n iris --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n iris --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding iris-admin-edit -n iris --group=34cea6ca-73ce-4514-a45f-d1b4839b8731 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/iris-admin-edit created
+kubectl create rolebinding iris-reader-view -n iris --group=f5b15e71-4e97-45d5-87d0-29de7020cff7 --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/iris-reader-view created
+kubectl create rolebinding traviata-admin-edit -n sap --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n sap --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding sap-admin-edit -n sap --group=844a8714-d925-4eba-a346-d37108d8ec27 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/sap-admin-edit created
+kubectl create rolebinding sap-reader-view -n sap --group=6bda1d00-bfa2-49ea-8f8c-48c07b272a98 --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/sap-reader-view created
+---------- stg ----------
+kubectl create rolebinding traviata-admin-edit -n core --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n core --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding core-admin-edit -n core --group=c70dec03-4610-4694-9818-c21d12c38e36 --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/core-admin-edit created
+kubectl create rolebinding core-reader-view -n core --group=a1a52dd9-c4a6-43e3-9c42-14ed5de74f4a --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/core-reader-view created
+kubectl create rolebinding traviata-admin-edit -n inv --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n inv --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding inv-admin-edit -n inv --group=7150d86f-0557-43ba-b24d-b223fe67abae --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/inv-admin-edit created
+kubectl create rolebinding inv-reader-view -n inv --group=9bd32de7-4a31-408c-a93b-ece00e110282 --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/inv-reader-view created
+kubectl create rolebinding traviata-admin-edit -n tds --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n tds --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding tds-admin-edit -n tds --group=6e59dd13-2d7b-48ba-9076-27ec4d6acf29 --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/tds-admin-edit created
+kubectl create rolebinding tds-reader-view -n tds --group=83987d72-4bed-4cc6-8eef-f62a9e3ec147 --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/tds-reader-view created
+kubectl create rolebinding traviata-admin-edit -n play --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n play --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding play-admin-edit -n play --group=91200896-f268-4f18-89ec-ab70b8a01848 --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/play-admin-edit created
+kubectl create rolebinding play-reader-view -n play --group=39b5ea9c-6747-449e-ad05-7ffeb674e7e6 --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/play-reader-view created
+kubectl create rolebinding traviata-admin-edit -n e2g --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding traviata-reader-view -n e2g --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding e2g-admin-edit -n e2g --group=2ee02006-d4fa-434e-9268-0753b9f1c60e --clusterrole=edit --context plat-neu-stg-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding e2g-reader-view -n e2g --group=84879d9e-d4f8-41ae-8cef-0e3018a1c4ce --clusterrole=view --context plat-neu-stg-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding traviata-admin-edit -n mbt --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n mbt --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding mbt-admin-edit -n mbt --group=268bbab8-07d5-4b1f-839a-701190998cf5 --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/mbt-admin-edit created
+kubectl create rolebinding mbt-reader-view -n mbt --group=62af97a4-39e9-4c54-9df5-4704b6272d62 --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/mbt-reader-view created
+kubectl create rolebinding traviata-admin-edit -n iris --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n iris --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding iris-admin-edit -n iris --group=4d61ed6c-8d9b-4380-9fcf-fffc2411deb3 --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/iris-admin-edit created
+kubectl create rolebinding iris-reader-view -n iris --group=8544356c-1cda-4a39-9eb8-535cbf67f186 --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/iris-reader-view created
+kubectl create rolebinding traviata-admin-edit -n sap --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n sap --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding sap-admin-edit -n sap --group=48428605-5e11-4efb-a445-c157eac3efbd --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/sap-admin-edit created
+kubectl create rolebinding sap-reader-view -n sap --group=593a5575-822c-455a-94b8-2dd8ca4c036c --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/sap-reader-view created
+---------- prod ----------
+kubectl create rolebinding traviata-admin-edit -n core --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n core --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding core-admin-edit -n core --group=71b828f0-6281-41ad-97e4-e83ffe279600 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/core-admin-edit created
+kubectl create rolebinding core-reader-view -n core --group=dd041475-a036-41e2-ab30-df7e06518543 --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/core-reader-view created
+kubectl create rolebinding traviata-admin-edit -n inv --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n inv --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding inv-admin-edit -n inv --group=dd76ba4b-5519-49e1-9869-52d7312aa23e --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/inv-admin-edit created
+kubectl create rolebinding inv-reader-view -n inv --group=0c820442-261c-4168-9755-484db08f360d --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/inv-reader-view created
+kubectl create rolebinding traviata-admin-edit -n tds --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n tds --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding tds-admin-edit -n tds --group=172caf59-9116-4b09-a5dd-23ad3ab6da55 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/tds-admin-edit created
+kubectl create rolebinding tds-reader-view -n tds --group=3130d175-9c4c-4f61-8204-e6bb033c880f --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/tds-reader-view created
+kubectl create rolebinding traviata-admin-edit -n play --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n play --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding play-admin-edit -n play --group=cb265055-2e62-4e85-bd37-31f2c51444c0 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/play-admin-edit created
+kubectl create rolebinding play-reader-view -n play --group=2c23e00e-551c-4a18-af87-17e37c660ed3 --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/play-reader-view created
+kubectl create rolebinding traviata-admin-edit -n e2g --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding traviata-reader-view -n e2g --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding e2g-admin-edit -n e2g --group=2ea50585-708a-483b-88ca-57853b618ed2 --clusterrole=edit --context plat-neu-prod-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding e2g-reader-view -n e2g --group=c866c4ff-3ac6-4553-b9a3-bde4e020e4db --clusterrole=view --context plat-neu-prod-001-aks
+error: failed to create rolebinding: namespaces "e2g" not found
+kubectl create rolebinding traviata-admin-edit -n mbt --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n mbt --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding mbt-admin-edit -n mbt --group=be393f84-ed14-4522-aadf-ccaa8573238a --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/mbt-admin-edit created
+kubectl create rolebinding mbt-reader-view -n mbt --group=50ce4703-e408-4fcb-b3fc-b7f291fa939c --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/mbt-reader-view created
+kubectl create rolebinding traviata-admin-edit -n iris --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n iris --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding iris-admin-edit -n iris --group=54d7242d-bd8c-4380-9608-d908a1973967 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/iris-admin-edit created
+kubectl create rolebinding iris-reader-view -n iris --group=bed37f7e-9f35-45e8-9a28-65bbd1220ded --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/iris-reader-view created
+kubectl create rolebinding traviata-admin-edit -n sap --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n sap --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding sap-admin-edit -n sap --group=9dd3b85b-419f-45a9-8c4c-2ed5a2d35b92 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/sap-admin-edit created
+kubectl create rolebinding sap-reader-view -n sap --group=2b5011fe-4562-46ae-896d-05ddd000751f --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/sap-reader-view created
+---------- dev (dex/e2g) ----------
+kubectl create rolebinding traviata-admin-edit -n dex --group=32bca7a2-1255-4d81-9263-27349311d2ec --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n dex --group=cf03d2cd-81bf-4001-8394-cc1fdf56915a --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding e2g-admin-edit -n dex --group=e723d162-c49e-4a9e-886d-bb8fbc697824 --clusterrole=edit --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/e2g-admin-edit created
+kubectl create rolebinding e2g-reader-view -n dex --group=fbf956ee-a73e-4902-b921-9f8d1a16e5d3 --clusterrole=view --context plat-neu-dev-001-aks
+rolebinding.rbac.authorization.k8s.io/e2g-reader-view created
+---------- stg (dex/e2g) ----------
+kubectl create rolebinding traviata-admin-edit -n dex --group=6f5e4494-edb0-4e2f-8f6a-e8ebbdde730d --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n dex --group=b2f7858a-e656-475c-87cb-b943cb78743e --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding e2g-admin-edit -n dex --group=2ee02006-d4fa-434e-9268-0753b9f1c60e --clusterrole=edit --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/e2g-admin-edit created
+kubectl create rolebinding e2g-reader-view -n dex --group=84879d9e-d4f8-41ae-8cef-0e3018a1c4ce --clusterrole=view --context plat-neu-stg-001-aks
+rolebinding.rbac.authorization.k8s.io/e2g-reader-view created
+---------- prod (dex/e2g) ----------
+kubectl create rolebinding traviata-admin-edit -n dex --group=84e0fec8-7c00-4a53-877d-1ca9945222c5 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-admin-edit created
+kubectl create rolebinding traviata-reader-view -n dex --group=c1243f4c-34fb-46d3-ba21-c5369115702a --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/traviata-reader-view created
+kubectl create rolebinding e2g-admin-edit -n dex --group=2ea50585-708a-483b-88ca-57853b618ed2 --clusterrole=edit --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/e2g-admin-edit created
+kubectl create rolebinding e2g-reader-view -n dex --group=c866c4ff-3ac6-4553-b9a3-bde4e020e4db --clusterrole=view --context plat-neu-prod-001-aks
+rolebinding.rbac.authorization.k8s.io/e2g-reader-view created

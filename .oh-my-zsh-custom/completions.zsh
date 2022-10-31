@@ -4,7 +4,13 @@
 
 if command -v kubectl &> /dev/null
 then
-    source <(kubectl completion zsh) # Not sure why kubectl plugin is not already doing this for me
-    complete -F __start_kubectl decode
-    complete -F __start_kubectl kn
+    source <(kubectl completion zsh) # The kubectl plugin is not already doing this for me
 fi
+
+_nuke_zsh_complete()
+{
+  local completions=("$(nuke :complete "$words")")
+  reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _nuke_zsh_complete nuke

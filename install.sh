@@ -10,6 +10,7 @@ FILES=(
   .gitconfig
   .npmrc
   .tmux.conf
+  .vimrc
   .yarnrc
   .zshrc
   vpn-fix.bash # Not a dotfile but we want the symlink here
